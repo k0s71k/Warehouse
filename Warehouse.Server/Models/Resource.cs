@@ -7,8 +7,8 @@ namespace Warehouse.Server.Models;
 public class Resource
 {
     [Key]
-    public string Guid { get; set; } = string.Empty;
-    public string? Name { get; set; }
+    public string Guid { get; set; } = null!;
+    public string Name { get; set; } = null!;
     public bool IsArchieved { get; set; } = false;
 
     [JsonIgnore]

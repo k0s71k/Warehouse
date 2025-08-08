@@ -5,10 +5,10 @@ namespace Warehouse.Server.Models;
 public class SendDocument
 {
     [Key]
-    public string Guid { get; set; } = string.Empty;
-    public string? Number { get; set; }
-    public string ClientId { get; set; } = string.Empty;
-    public Client? Client { get; set; }
+    public string Guid { get; set; } = null!;
+    public string Number { get; set; } = null!;
+    public string ClientId { get; set; } = null!;
+    public Client Client { get; set; } = null!;
     public DateTime Date { get; set; }
     public bool IsSigned { get; set; }
 

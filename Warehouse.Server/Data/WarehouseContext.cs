@@ -7,6 +7,7 @@ public class WarehouseContext: DbContext
 {
     public WarehouseContext(DbContextOptions options) : base(options)
     {
+        this.Database.EnsureCreated();
     }
 
     protected WarehouseContext()
